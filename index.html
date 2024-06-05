@@ -56,10 +56,10 @@
                 let pressure = data.main.pressure
                 console.log(pressure);
 
-                let longitude = data.coord.lon
-                console.log(longitude);
-                let latitude = data.coord.lat
-                console.log(latitude);
+                let lon = data.coord.lon
+                console.log(lon);
+                let lat = data.coord.lat
+                console.log(lat);
 
                 result.innerHTML =
                 `<h2>${temperature}°C </h2>
@@ -71,7 +71,7 @@
                     <li class="list-group-item" style="background: transparent;">Humidity : ${humidity}%</li><hr>
                     <li class="list-group-item" style="background: transparent;">Wind : ${wind}km/h</li><hr>
                     <li class="list-group-item" style="background: transparent;">Pressure : ${pressure}mb</li><hr>
-                    <li class="list-group-item" style="background: transparent;">Coordinates : ${longitude}°longitude , ${latitude}°latitude</li>
+                    <li class="list-group-item" style="background: transparent;">Coordinates : ${lon}°longitude , ${lat}°latitude</li>
                 </ul>`
             })
         }
