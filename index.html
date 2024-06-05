@@ -37,23 +37,29 @@
                 //temperature
                 let temperature = data.main.temp
                 console.log(temperature);
+
                 let name = data.name
                 console.log(name);
+
                 const currentDate = new Date()
                 console.log(currentDate);
+
                 let code = data.sys.country
                 console.log(code);
+
                 let humidity = data.main.humidity
                 console.log(humidity);
+
                 let wind = data.wind.speed
                 console.log(wind);
+                
                 let pressure = data.main.pressure
                 console.log(pressure);
 
                 let longitude = data.coord.lon
-                console.log(long);
+                console.log(longitude);
                 let latitude = data.coord.lat
-                console.log(lati);
+                console.log(latitude);
 
                 result.innerHTML =
                 `<h2>${temperature}°C </h2>
